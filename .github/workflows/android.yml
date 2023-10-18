@@ -16,10 +16,10 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
       - name: Build the app
-        run: ./gradlew clean assembleDebug
+        run: ./gradlew clean assembleDebug && tree
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.3
         with:
           name: app
-          path: /home/runner/work/ffupdater/ffupdater/app/build/outputs/apk/debug/
+          path: /home/runner/work/ffupdater/ffupdater/ffupdater/build/outputs/apk/debug/
         
