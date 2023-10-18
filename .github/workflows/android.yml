@@ -16,7 +16,7 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
       - name: Build the app
-        run: ./gradlew clean build
+        run: ./gradlew clean assembleDebug
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.3
         with:
